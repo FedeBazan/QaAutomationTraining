@@ -29,4 +29,7 @@ public class Base {
         boolean element = driver.findElement(locator).isDisplayed();
         return element;
     }
+    public String getText(By locator){
+        return driver.findElement(locator).getText();
+    }
 }

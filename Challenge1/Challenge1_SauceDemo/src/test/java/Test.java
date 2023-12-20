@@ -37,4 +37,38 @@ public class Test {
         indexLogin.loginSuccefull();
         Assert.assertTrue(inventory.isDisplayedCart());
     }
+
+    //Login Eail (Epic sadface)
+    @org.testng.annotations.Test
+    public void faillogin(){
+        IndexLogin indexLogin = new IndexLogin(driver);
+        Assert.assertTrue(indexLogin.loginUnsuccefull());
+    }
+
+    //Add item to cart
+    @org.testng.annotations.Test
+    public void addItemToCart(){
+        IndexLogin indexLogin = new IndexLogin(driver);
+        Inventory inventory = new Inventory(driver);
+        indexLogin.loginSuccefull();
+        Assert.assertTrue(inventory.addToCart());
+    }
+
+    //Delete Item
+    @org.testng.annotations.Test
+    public void deleteItemToCart(){
+        IndexLogin indexLogin = new IndexLogin(driver);
+        Inventory inventory = new Inventory(driver);
+        indexLogin.loginSuccefull();
+        Assert.assertTrue(inventory.addToCart());
+        Assert.assertTrue(inventory.deleteItemCart());
+    }
+
+    @org.testng.annotations.Test
+    public void checkOutItems(){
+        IndexLogin indexLogin = new IndexLogin(driver);
+        Inventory inventory = new Inventory(driver);
+        indexLogin.loginSuccefull();
+        Assert.assertTrue(inventory.addToCart());
+    }
 }

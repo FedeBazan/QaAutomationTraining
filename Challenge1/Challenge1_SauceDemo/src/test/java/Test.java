@@ -4,6 +4,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import saucedemo.IndexLogin;
+import saucedemo.Inventory;
 
 
 public class Test {
@@ -24,5 +26,15 @@ public class Test {
     public void testConnection(){
         String title=driver.getTitle();
         Assert.assertEquals("Swag Labs",title);
+    }
+
+    //Login Succefully
+
+    @org.testng.annotations.Test
+    public void loginsuccessfully(){
+        IndexLogin indexLogin = new IndexLogin(driver);
+        Inventory inventory = new Inventory(driver);
+        indexLogin.loginSuccefull();
+        Assert.assertTrue(inventory.isDisplayedCart());
     }
 }

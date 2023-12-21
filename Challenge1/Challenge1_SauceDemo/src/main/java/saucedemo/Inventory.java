@@ -15,12 +15,17 @@ public class Inventory extends Base {
     By backpackRemoveToCartId =By.id("remove-sauce-labs-backpack");
     By productCountCartClass = By.className("shopping_cart_badge");
 
+    By cartBtmClass = By.className("shopping_cart_link");
+
     public boolean isDisplayedCart(){
         return isDisplayed(inventoryContainerId);
     }
 
-    public boolean addToCart(){
+    public void addToCart(){
         clickOnElement(backpackAddToCartId);
+    }
+
+    public boolean checkAddToCart(){
         return isDisplayed(productCountCartClass);
     }
 
@@ -30,6 +35,12 @@ public class Inventory extends Base {
             return isDisplayed(backpackAddToCartId);
         }else {
             return false;
+        }
+    }
+
+    public void goToCartCheck(){
+        if (checkAddToCart()){
+            clickOnElement(cartBtmClass);
         }
     }
 

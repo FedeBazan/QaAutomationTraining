@@ -51,7 +51,8 @@ public class Test {
         IndexLogin indexLogin = new IndexLogin(driver);
         Inventory inventory = new Inventory(driver);
         indexLogin.loginSuccefull();
-        Assert.assertTrue(inventory.addToCart());
+        inventory.addToCart();
+        Assert.assertTrue(inventory.checkAddToCart());
     }
 
     //Delete Item
@@ -60,15 +61,20 @@ public class Test {
         IndexLogin indexLogin = new IndexLogin(driver);
         Inventory inventory = new Inventory(driver);
         indexLogin.loginSuccefull();
-        Assert.assertTrue(inventory.addToCart());
+        inventory.addToCart();
+        Assert.assertTrue(inventory.checkAddToCart());
         Assert.assertTrue(inventory.deleteItemCart());
     }
+
+    //CheckOut Item
 
     @org.testng.annotations.Test
     public void checkOutItems(){
         IndexLogin indexLogin = new IndexLogin(driver);
         Inventory inventory = new Inventory(driver);
         indexLogin.loginSuccefull();
-        Assert.assertTrue(inventory.addToCart());
+        inventory.addToCart();
+        Assert.assertTrue(inventory.checkAddToCart());
+        inventory.goToCartCheck();
     }
 }

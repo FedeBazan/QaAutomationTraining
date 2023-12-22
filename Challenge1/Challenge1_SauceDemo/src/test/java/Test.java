@@ -4,6 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import saucedemo.Cart;
 import saucedemo.IndexLogin;
 import saucedemo.Inventory;
 
@@ -72,9 +73,13 @@ public class Test {
     public void checkOutItems(){
         IndexLogin indexLogin = new IndexLogin(driver);
         Inventory inventory = new Inventory(driver);
+        Cart cart = new Cart(driver);
+        String titleExpected = "Your Cart";
         indexLogin.loginSuccefull();
         inventory.addToCart();
         Assert.assertTrue(inventory.checkAddToCart());
         inventory.goToCartCheck();
+        Assert.assertEquals(cart.checkPageTitle(),titleExpected);
+        cart.clickOnCheckOutCart();
     }
 }

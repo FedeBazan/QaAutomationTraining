@@ -7,7 +7,7 @@ Desafío de Automatización:
 
 Escenario de prueba: Automatizar la validación de la carga dinámica de elementos en la página "Example 2: Element rendered after the fact".
 Pasos:
-Abre la página de Dynamic Loading.
+Abre la página de Dynamic Loading. https://the-internet.herokuapp.com/dynamic_loading
 Haz clic en el enlace "Example 2: Element rendered after the fact".
 Haz clic en el botón "Start".
 Espera a que el elemento con el texto "Hello World!" sea visible.

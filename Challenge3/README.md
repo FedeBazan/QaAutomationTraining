@@ -1,33 +1,19 @@
 # QaAutomationTraining
-<br>Aquí tienes otro desafío para un ingeniero de automatización de pruebas QA junior utilizando Maven, Java, TestNG y Selenium. 
-<br>En esta ocasión, trabajaremos con la aplicación "The Internet" de Heroku:
+<br>Para este desafío, puedes usar el sitio web de comercio electrónico de demostración: http://automationpractice.com/index.php
 
-<br>Sitio web de prueba: The Internet - Dynamic Loading
+<br>Desafío:
 
-<br>Desafío de Automatización:
+<br>Configuración del entorno de prueba: Configura tu entorno de prueba con Selenium WebDriver, TestNG y Java.
 
-<br>Escenario de prueba: Automatizar la validación de la carga dinámica de elementos en la página "Example 2: Element rendered after the fact".
-<br>Pasos:
-<br>Abre la página de Dynamic Loading. https://the-internet.herokuapp.com/dynamic_loading
-<br>Haz clic en el enlace "Example 2: Element rendered after the fact".
-<br>Haz clic en el botón "Start".
-<br>Espera a que el elemento con el texto "Hello World!" sea visible.
-<br>Verifica que el texto "Hello World!" esté presente en la página.
-<br>Requisitos:
+<br>Escenario de prueba: Escribe un caso de prueba automatizado que realice lo siguiente en http://automationpractice.com/index.php:
 
-<br>Utiliza Maven como herramienta de gestión de proyectos.
-<br>Implementa los scripts de prueba en Java.
-<br>Utiliza TestNG para estructurar y ejecutar las pruebas.
-<br>Utiliza Selenium WebDriver para interactuar con los elementos de la página web.
-<br>Puntos extras:
+<br>Navega a la página de inicio del sitio web.
+<br>Busca un producto (por ejemplo, “dress”).
+<br>Filtra los resultados de la búsqueda por color (por ejemplo, “Orange”).
+<br>Añade el primer producto de los resultados filtrados al carrito.
+<br>Navega al carrito y verifica que el producto añadido está presente.
+<br>Implementación del caso de prueba: Implementa el caso de prueba utilizando Page Object Model (POM) para una mejor estructura y mantenibilidad del código.
 
-<br>Implementa manejo de tiempos de espera de manera eficiente.
-<br>Utiliza aserciones para validar el estado esperado de los elementos.
-<br>Escribe un script adicional para el escenario "Example 1" y ejecuta ambos scripts en paralelo.
-<br>Implementa capturas de pantalla en caso de fallos.
-<br>Entrega:
+<br>Ejecución y reporte de pruebas: Ejecuta el caso de prueba utilizando TestNG y genera un informe de prueba.
 
-<br>Proporciona el código fuente en un repositorio de GitHub.
-<br>Incluye un archivo README con instrucciones para ejecutar las pruebas.
-<br>Agrega comentarios en el código para explicar tu enfoque.
-<br>Este desafío te brindará la oportunidad de demostrar habilidades en la automatización de pruebas web, especialmente en el manejo de <br>elementos cargados dinámicamente. ¡Espero que disfrutes enfrentando este desafío! ¡Buena suerte!
+<br>Por favor, ten en cuenta que este es un desafío simulado y puede que necesites adaptarlo según las necesidades específicas de tu entrevista o empresa. ¡Buena suerte!

@@ -1,4 +1,5 @@
 import automationPractice.Home;
+import automationPractice.ProductID2;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,7 +28,7 @@ public class Test {
         Assert.assertEquals(url,"https://www.demoblaze.com/");
     }
 
-    @org.testng.annotations.Test(priority = 1)
+    @org.testng.annotations.Test
     public void testHomePageLoged(){
         Home home = new Home(driver);
         String username = "Lordmilagruesa99";
@@ -35,12 +36,23 @@ public class Test {
         home.loginAccount(username,password);
     }
 
-    @org.testng.annotations.Test(priority = 2)
+    @org.testng.annotations.Test
     public void selectPhoneCategory(){
         Home home = new Home(driver);
         String username = "Lordmilagruesa99";
         String password = "Jol04w3A!";
         home.loginAccount(username,password);
-        //home.clickOnPhonesCategoty(); no hace click en la categoria
+        home.clickOnPhonesCategoty(); //no hace click en la categoria
+    }
+
+    @org.testng.annotations.Test
+    public void testProductsDetails(){
+        Home home = new Home(driver);
+        ProductID2 productID2 = new ProductID2(driver);
+        String username = "Lordmilagruesa99";
+        String password = "Jol04w3A!";
+        home.loginAccount(username,password);
+        home.goToItem();
+        Assert.assertTrue(productID2.isDisplayedDescription());
     }
 }

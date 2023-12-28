@@ -4,9 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.List;
-
-public class Home  extends Base{
+public class Home extends Base {
 
     By logInBtmId = By.id("login2");
     By usernameLabelId = By.id("loginusername");
@@ -23,22 +21,22 @@ public class Home  extends Base{
         super(driver);
     }
 
-    public void loginAccount (String username,String password){
+    public void loginAccount(String username, String password) {
         clickOnElement(logInBtmId);
         wait.until(ExpectedConditions.visibilityOfElementLocated(usernameLabelId));
         wait.until(ExpectedConditions.visibilityOfElementLocated(passwordLabelId));
-        sendKeys(usernameLabelId,username);
-        sendKeys(passwordLabelId,password);
+        sendKeys(usernameLabelId, username);
+        sendKeys(passwordLabelId, password);
         clickOnElement(loginBtmFormXpath);
     }
 
-    public void clickOnPhonesCategoty(){
+    public void clickOnPhonesCategoty() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(phonCategoryId));
         clickOnElement(phonCategoryId);
     }
 
-    public void goToItem(){
-        //System.out.println(getText(nokiaLumiaXparh));
+    public void goToItem() {
+        // System.out.println(getText(nokiaLumiaXparh));
         wait.until(ExpectedConditions.visibilityOfElementLocated(nokiaLumiaXparh));
         clickOnElement(nokiaLumiaXparh);
     }

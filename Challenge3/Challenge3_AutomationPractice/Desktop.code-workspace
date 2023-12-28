@@ -1,0 +1,48 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../DATOS/Desktop"
+		},
+		{
+			"path": "../../../../../CarpetaProtegida"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/TFI/FIN/Pruebas"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/TFIV1.2.3/Pruebas"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/ultimo_avance"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/PruebasV2"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/PruebasV3"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/Last_Update"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/Cartas"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/RevisarloUrgente"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/etapaFinal"
+		},
+		{
+			"path": "../../../../../0 DESCARGAS/TFI ED 2023 AMADOR CRISTIAN EMANUEL Y BAZAN FABRICIO"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CarpetaProtegida",
+		"files.associations": {
+			"iostream": "cpp",
+			"ostream": "cpp",
+			"new": "cpp"
+		}
+	}
+}

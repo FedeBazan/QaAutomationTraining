@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class ProductID2 extends Base{
+public class ProductID2 extends Base {
 
     By descriptionProductXpath = By.xpath("//*[@id=\"more-information\"]/p");
 
@@ -12,7 +12,7 @@ public class ProductID2 extends Base{
         super(driver);
     }
 
-    public boolean isDisplayedDescription(){
+    public boolean isDisplayedDescription() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(descriptionProductXpath));
         return isDisplayed(descriptionProductXpath);
     }
